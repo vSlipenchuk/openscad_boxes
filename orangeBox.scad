@@ -36,12 +36,12 @@ difference() {
  
 }
 
-module orangeBox(width=90,length=70,height=20,floor=2,wall=3) {
+module orangeBox(width=100,length=70,height=20,floor=2,wall=3) {
     difference() {
     box(width,length,height,floor,wall);
-       translate([-1,10,4+2]) cube([10,50,20]); // USB + Ether
+       translate([-1,10,4]) cube([10,50,20]); // USB + Ether
         // power need !
-       translate([width-wall-1,20,10]) rotate([0,90,0]) cylinder( r=4, h=10,$fn=32);
+       translate([width-wall-1,20,13]) rotate([0,90,0]) cylinder( r=4, h=10,$fn=32);
        
     }
 }
